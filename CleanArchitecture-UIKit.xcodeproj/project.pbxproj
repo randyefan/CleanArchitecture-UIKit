@@ -19,6 +19,10 @@
 		618DBB0E28D5780300C1E787 /* PostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DBB0D28D5780300C1E787 /* PostRepository.swift */; };
 		618DBB1028D5780E00C1E787 /* CommentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DBB0F28D5780E00C1E787 /* CommentRepository.swift */; };
 		618DBB1228D5781A00C1E787 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DBB1128D5781A00C1E787 /* UserRepository.swift */; };
+		618DBB1528D57B9200C1E787 /* ViewPostsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DBB1428D57B9200C1E787 /* ViewPostsUseCase.swift */; };
+		618DBB1728D57E0800C1E787 /* ViewPostUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DBB1628D57E0800C1E787 /* ViewPostUseCase.swift */; };
+		618DBB1928D57F3800C1E787 /* ViewCommentsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DBB1828D57F3800C1E787 /* ViewCommentsUseCase.swift */; };
+		618DBB1B28D5803800C1E787 /* LoadUsersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DBB1A28D5803800C1E787 /* LoadUsersUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		618DBB0D28D5780300C1E787 /* PostRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepository.swift; sourceTree = "<group>"; };
 		618DBB0F28D5780E00C1E787 /* CommentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRepository.swift; sourceTree = "<group>"; };
 		618DBB1128D5781A00C1E787 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		618DBB1428D57B9200C1E787 /* ViewPostsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPostsUseCase.swift; sourceTree = "<group>"; };
+		618DBB1628D57E0800C1E787 /* ViewPostUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPostUseCase.swift; sourceTree = "<group>"; };
+		618DBB1828D57F3800C1E787 /* ViewCommentsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCommentsUseCase.swift; sourceTree = "<group>"; };
+		618DBB1A28D5803800C1E787 /* LoadUsersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadUsersUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 		618DBAFE28D5741A00C1E787 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				618DBB1328D57B6A00C1E787 /* Usecases */,
 				618DBB0B28D577C700C1E787 /* Interfaces */,
 				618DBB0328D5754C00C1E787 /* Entities */,
 			);
@@ -147,6 +156,17 @@
 				618DBB1128D5781A00C1E787 /* UserRepository.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		618DBB1328D57B6A00C1E787 /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				618DBB1428D57B9200C1E787 /* ViewPostsUseCase.swift */,
+				618DBB1628D57E0800C1E787 /* ViewPostUseCase.swift */,
+				618DBB1828D57F3800C1E787 /* ViewCommentsUseCase.swift */,
+				618DBB1A28D5803800C1E787 /* LoadUsersUseCase.swift */,
+			);
+			path = Usecases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,13 +241,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				618DBAEF28D573F200C1E787 /* ViewController.swift in Sources */,
+				618DBB1B28D5803800C1E787 /* LoadUsersUseCase.swift in Sources */,
 				618DBAEB28D573F200C1E787 /* AppDelegate.swift in Sources */,
 				618DBB1228D5781A00C1E787 /* UserRepository.swift in Sources */,
 				618DBB0A28D576C400C1E787 /* User.swift in Sources */,
+				618DBB1728D57E0800C1E787 /* ViewPostUseCase.swift in Sources */,
+				618DBB1528D57B9200C1E787 /* ViewPostsUseCase.swift in Sources */,
 				618DBB0E28D5780300C1E787 /* PostRepository.swift in Sources */,
 				618DBAED28D573F200C1E787 /* SceneDelegate.swift in Sources */,
 				618DBB1028D5780E00C1E787 /* CommentRepository.swift in Sources */,
 				618DBB0828D5762400C1E787 /* CommentResponse.swift in Sources */,
+				618DBB1928D57F3800C1E787 /* ViewCommentsUseCase.swift in Sources */,
 				618DBB0528D575BB00C1E787 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

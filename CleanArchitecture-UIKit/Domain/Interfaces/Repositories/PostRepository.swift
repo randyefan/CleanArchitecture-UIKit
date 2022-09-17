@@ -7,9 +7,10 @@
 
 import Foundation
 
+typealias PostsResult = (Result<[Post], Error>) -> Void
+typealias PostResult = (Result<Post, Error>) -> Void
+
 protocol PostRepository {
-    typealias PostResult = (Result<[Post], Error>) -> Void
-    
-    func fetchPosts(completion: @escaping (PostResult))
+    func fetchPosts(completion: @escaping (PostsResult))
     func fetchPost(id: Int, completion: @escaping (PostResult))
 }

@@ -7,8 +7,8 @@
 
 import Foundation
 
+typealias CommentResult = (Result<[CommentResponse], LoadCommentsError>) -> Void
+
 protocol CommentRepository {
-    typealias CommentResult = (Result<[CommentResponse], Error>) -> Void
-    
     func fetchComments(postId: Int, completion: @escaping CommentResult)
 }

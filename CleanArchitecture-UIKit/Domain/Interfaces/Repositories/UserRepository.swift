@@ -7,19 +7,9 @@
 
 import Foundation
 
-enum LoadUsersError: Error, Equatable {
-    case invalidToken
-    case invalidURL
-    case serverError
-    case noInternetConnection
-    case invalidBundleURL
-    case failToMakeDataOrDecodeUsersData
-    case unknown(message: String)
-}
+typealias UserResult = (Result<[User], LoadUsersError>) -> Void
 
 protocol UserRepository {
-    typealias UserResult = (Result<[User], LoadUsersError>) -> Void
-    
     func fetchUsers(completion: @escaping UserResult)
 }
 
