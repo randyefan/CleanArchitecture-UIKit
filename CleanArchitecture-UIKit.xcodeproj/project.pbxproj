@@ -13,6 +13,9 @@
 		618DBAF228D573F200C1E787 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 618DBAF028D573F200C1E787 /* Main.storyboard */; };
 		618DBAF428D573F300C1E787 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 618DBAF328D573F300C1E787 /* Assets.xcassets */; };
 		618DBAF728D573F300C1E787 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 618DBAF528D573F300C1E787 /* LaunchScreen.storyboard */; };
+		618DBB0528D575BB00C1E787 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DBB0428D575BB00C1E787 /* Post.swift */; };
+		618DBB0828D5762400C1E787 /* CommentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DBB0728D5762400C1E787 /* CommentResponse.swift */; };
+		618DBB0A28D576C400C1E787 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DBB0928D576C400C1E787 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		618DBAF328D573F300C1E787 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		618DBAF628D573F300C1E787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		618DBAF828D573F300C1E787 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		618DBB0428D575BB00C1E787 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		618DBB0728D5762400C1E787 /* CommentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentResponse.swift; sourceTree = "<group>"; };
+		618DBB0928D576C400C1E787 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,7 @@
 		618DBAFE28D5741A00C1E787 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				618DBB0328D5754C00C1E787 /* Entities */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -105,6 +112,16 @@
 				618DBAF528D573F300C1E787 /* LaunchScreen.storyboard */,
 			);
 			path = BaseView;
+			sourceTree = "<group>";
+		};
+		618DBB0328D5754C00C1E787 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				618DBB0428D575BB00C1E787 /* Post.swift */,
+				618DBB0728D5762400C1E787 /* CommentResponse.swift */,
+				618DBB0928D576C400C1E787 /* User.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,7 +197,10 @@
 			files = (
 				618DBAEF28D573F200C1E787 /* ViewController.swift in Sources */,
 				618DBAEB28D573F200C1E787 /* AppDelegate.swift in Sources */,
+				618DBB0A28D576C400C1E787 /* User.swift in Sources */,
 				618DBAED28D573F200C1E787 /* SceneDelegate.swift in Sources */,
+				618DBB0828D5762400C1E787 /* CommentResponse.swift in Sources */,
+				618DBB0528D575BB00C1E787 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
