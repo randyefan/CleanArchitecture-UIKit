@@ -9,7 +9,7 @@ import Foundation
 
 protocol PostService {
     func fetchPosts(completion: @escaping PostsResult)
-    func fetchPosts(id: Int, completion: @escaping PostResult)
+    func fetchPost(id: Int, completion: @escaping PostResult)
 }
 
 class PostServiceImpl: PostService {
@@ -42,7 +42,7 @@ class PostServiceImpl: PostService {
         }.resume()
     }
     
-    func fetchPosts(id: Int, completion: @escaping PostResult) {
+    func fetchPost(id: Int, completion: @escaping PostResult) {
         let url = URL(string: makeURLString(id: id))!
         
         URLSession.shared.dataTask(with: url) { (data, urlResponse, error) in

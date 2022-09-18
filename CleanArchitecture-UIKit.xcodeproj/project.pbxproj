@@ -13,6 +13,8 @@
 		61022E7B28D6D0F400D05739 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61022E7A28D6D0F400D05739 /* Configurable.swift */; };
 		61022E7E28D6D1DE00D05739 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61022E7D28D6D1DE00D05739 /* PostService.swift */; };
 		61022E8028D6D33D00D05739 /* CommentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61022E7F28D6D33D00D05739 /* CommentService.swift */; };
+		61022E8328D6D82E00D05739 /* PostRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61022E8228D6D82E00D05739 /* PostRepositoryImpl.swift */; };
+		61022E8528D6D91C00D05739 /* CommentRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61022E8428D6D91C00D05739 /* CommentRepositoryImpl.swift */; };
 		618DBAEB28D573F200C1E787 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DBAEA28D573F200C1E787 /* AppDelegate.swift */; };
 		618DBAED28D573F200C1E787 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DBAEC28D573F200C1E787 /* SceneDelegate.swift */; };
 		618DBAEF28D573F200C1E787 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DBAEE28D573F200C1E787 /* ViewController.swift */; };
@@ -38,6 +40,8 @@
 		61022E7A28D6D0F400D05739 /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
 		61022E7D28D6D1DE00D05739 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		61022E7F28D6D33D00D05739 /* CommentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentService.swift; sourceTree = "<group>"; };
+		61022E8228D6D82E00D05739 /* PostRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepositoryImpl.swift; sourceTree = "<group>"; };
+		61022E8428D6D91C00D05739 /* CommentRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRepositoryImpl.swift; sourceTree = "<group>"; };
 		618DBAE728D573F200C1E787 /* CleanArchitecture-UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CleanArchitecture-UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		618DBAEA28D573F200C1E787 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		618DBAEC28D573F200C1E787 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +93,15 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		61022E8128D6D7AE00D05739 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				61022E8228D6D82E00D05739 /* PostRepositoryImpl.swift */,
+				61022E8428D6D91C00D05739 /* CommentRepositoryImpl.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		618DBADE28D573F200C1E787 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +144,7 @@
 		618DBAFF28D5742000C1E787 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				61022E8128D6D7AE00D05739 /* Repositories */,
 				61022E7C28D6D1CA00D05739 /* Services */,
 			);
 			path = Data;
@@ -286,6 +300,7 @@
 				618DBB1728D57E0800C1E787 /* ViewPostUseCase.swift in Sources */,
 				618DBB1528D57B9200C1E787 /* ViewPostsUseCase.swift in Sources */,
 				618DBB0E28D5780300C1E787 /* PostRepository.swift in Sources */,
+				61022E8528D6D91C00D05739 /* CommentRepositoryImpl.swift in Sources */,
 				618DBAED28D573F200C1E787 /* SceneDelegate.swift in Sources */,
 				61022E7528D6CFD500D05739 /* JSON.swift in Sources */,
 				618DBB1028D5780E00C1E787 /* CommentRepository.swift in Sources */,
@@ -293,6 +308,7 @@
 				618DBB1928D57F3800C1E787 /* ViewCommentsUseCase.swift in Sources */,
 				61022E8028D6D33D00D05739 /* CommentService.swift in Sources */,
 				618DBB0528D575BB00C1E787 /* Post.swift in Sources */,
+				61022E8328D6D82E00D05739 /* PostRepositoryImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
