@@ -17,7 +17,7 @@
 		61022E8528D6D91C00D05739 /* CommentRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61022E8428D6D91C00D05739 /* CommentRepositoryImpl.swift */; };
 		618DBAEB28D573F200C1E787 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DBAEA28D573F200C1E787 /* AppDelegate.swift */; };
 		618DBAED28D573F200C1E787 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DBAEC28D573F200C1E787 /* SceneDelegate.swift */; };
-		618DBAEF28D573F200C1E787 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DBAEE28D573F200C1E787 /* ViewController.swift */; };
+		618DBAEF28D573F200C1E787 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DBAEE28D573F200C1E787 /* PostsViewController.swift */; };
 		618DBAF228D573F200C1E787 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 618DBAF028D573F200C1E787 /* Main.storyboard */; };
 		618DBAF428D573F300C1E787 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 618DBAF328D573F300C1E787 /* Assets.xcassets */; };
 		618DBAF728D573F300C1E787 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 618DBAF528D573F300C1E787 /* LaunchScreen.storyboard */; };
@@ -31,6 +31,11 @@
 		618DBB1728D57E0800C1E787 /* ViewPostUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DBB1628D57E0800C1E787 /* ViewPostUseCase.swift */; };
 		618DBB1928D57F3800C1E787 /* ViewCommentsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DBB1828D57F3800C1E787 /* ViewCommentsUseCase.swift */; };
 		618DBB1B28D5803800C1E787 /* LoadUsersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DBB1A28D5803800C1E787 /* LoadUsersUseCase.swift */; };
+		61FD8BE028D7746D00C397D5 /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FD8BDF28D7746D00C397D5 /* PostsViewModel.swift */; };
+		61FD8BE328D7769E00C397D5 /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FD8BE228D7769E00C397D5 /* AppDIContainer.swift */; };
+		61FD8BE528D7772F00C397D5 /* PostModuleDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FD8BE428D7772F00C397D5 /* PostModuleDIContainer.swift */; };
+		61FD8BE828D77B7000C397D5 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FD8BE728D77B7000C397D5 /* LoadingViewController.swift */; };
+		61FD8BEB28D77BB700C397D5 /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FD8BEA28D77BB700C397D5 /* Extension+UIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +50,7 @@
 		618DBAE728D573F200C1E787 /* CleanArchitecture-UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CleanArchitecture-UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		618DBAEA28D573F200C1E787 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		618DBAEC28D573F200C1E787 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		618DBAEE28D573F200C1E787 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		618DBAEE28D573F200C1E787 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
 		618DBAF128D573F200C1E787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		618DBAF328D573F300C1E787 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		618DBAF628D573F300C1E787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,6 +65,11 @@
 		618DBB1628D57E0800C1E787 /* ViewPostUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPostUseCase.swift; sourceTree = "<group>"; };
 		618DBB1828D57F3800C1E787 /* ViewCommentsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCommentsUseCase.swift; sourceTree = "<group>"; };
 		618DBB1A28D5803800C1E787 /* LoadUsersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadUsersUseCase.swift; sourceTree = "<group>"; };
+		61FD8BDF28D7746D00C397D5 /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
+		61FD8BE228D7769E00C397D5 /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
+		61FD8BE428D7772F00C397D5 /* PostModuleDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModuleDIContainer.swift; sourceTree = "<group>"; };
+		61FD8BE728D77B7000C397D5 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		61FD8BEA28D77BB700C397D5 /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +135,6 @@
 				618DBB0028D5742500C1E787 /* Presentation */,
 				618DBAFF28D5742000C1E787 /* Data */,
 				618DBAFE28D5741A00C1E787 /* Domain */,
-				618DBAEE28D573F200C1E787 /* ViewController.swift */,
 				618DBAF828D573F300C1E787 /* Info.plist */,
 			);
 			path = "CleanArchitecture-UIKit";
@@ -153,6 +162,8 @@
 		618DBB0028D5742500C1E787 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				61FD8BE628D77B5900C397D5 /* UI-Components */,
+				61FD8BDB28D773AD00C397D5 /* Scenes */,
 				618DBB0228D5747A00C1E787 /* BaseView */,
 			);
 			path = Presentation;
@@ -161,6 +172,8 @@
 		618DBB0128D5743E00C1E787 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				61FD8BE928D77BA100C397D5 /* Extension */,
+				61FD8BE128D7768600C397D5 /* DI */,
 				61022E7328D6CFBA00D05739 /* Helpers */,
 				618DBAEA28D573F200C1E787 /* AppDelegate.swift */,
 				618DBAEC28D573F200C1E787 /* SceneDelegate.swift */,
@@ -215,6 +228,64 @@
 				618DBB1A28D5803800C1E787 /* LoadUsersUseCase.swift */,
 			);
 			path = Usecases;
+			sourceTree = "<group>";
+		};
+		61FD8BDB28D773AD00C397D5 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				61FD8BDC28D773B500C397D5 /* PostsScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		61FD8BDC28D773B500C397D5 /* PostsScene */ = {
+			isa = PBXGroup;
+			children = (
+				61FD8BDE28D7740900C397D5 /* View */,
+				61FD8BDD28D7740300C397D5 /* ViewModel */,
+			);
+			path = PostsScene;
+			sourceTree = "<group>";
+		};
+		61FD8BDD28D7740300C397D5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				61FD8BDF28D7746D00C397D5 /* PostsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		61FD8BDE28D7740900C397D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				618DBAEE28D573F200C1E787 /* PostsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		61FD8BE128D7768600C397D5 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				61FD8BE228D7769E00C397D5 /* AppDIContainer.swift */,
+				61FD8BE428D7772F00C397D5 /* PostModuleDIContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		61FD8BE628D77B5900C397D5 /* UI-Components */ = {
+			isa = PBXGroup;
+			children = (
+				61FD8BE728D77B7000C397D5 /* LoadingViewController.swift */,
+			);
+			path = "UI-Components";
+			sourceTree = "<group>";
+		};
+		61FD8BE928D77BA100C397D5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				61FD8BEA28D77BB700C397D5 /* Extension+UIViewController.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,24 +359,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				618DBAEF28D573F200C1E787 /* ViewController.swift in Sources */,
+				618DBAEF28D573F200C1E787 /* PostsViewController.swift in Sources */,
 				61022E7728D6D02B00D05739 /* Observable.swift in Sources */,
 				61022E7B28D6D0F400D05739 /* Configurable.swift in Sources */,
 				618DBB1B28D5803800C1E787 /* LoadUsersUseCase.swift in Sources */,
 				618DBAEB28D573F200C1E787 /* AppDelegate.swift in Sources */,
 				61022E7928D6D0C000D05739 /* HTTPCode.swift in Sources */,
 				618DBB1228D5781A00C1E787 /* UserRepository.swift in Sources */,
+				61FD8BE828D77B7000C397D5 /* LoadingViewController.swift in Sources */,
 				61022E7E28D6D1DE00D05739 /* PostService.swift in Sources */,
 				618DBB0A28D576C400C1E787 /* User.swift in Sources */,
 				618DBB1728D57E0800C1E787 /* ViewPostUseCase.swift in Sources */,
 				618DBB1528D57B9200C1E787 /* ViewPostsUseCase.swift in Sources */,
 				618DBB0E28D5780300C1E787 /* PostRepository.swift in Sources */,
+				61FD8BEB28D77BB700C397D5 /* Extension+UIViewController.swift in Sources */,
 				61022E8528D6D91C00D05739 /* CommentRepositoryImpl.swift in Sources */,
 				618DBAED28D573F200C1E787 /* SceneDelegate.swift in Sources */,
 				61022E7528D6CFD500D05739 /* JSON.swift in Sources */,
 				618DBB1028D5780E00C1E787 /* CommentRepository.swift in Sources */,
+				61FD8BE328D7769E00C397D5 /* AppDIContainer.swift in Sources */,
 				618DBB0828D5762400C1E787 /* CommentResponse.swift in Sources */,
+				61FD8BE528D7772F00C397D5 /* PostModuleDIContainer.swift in Sources */,
 				618DBB1928D57F3800C1E787 /* ViewCommentsUseCase.swift in Sources */,
+				61FD8BE028D7746D00C397D5 /* PostsViewModel.swift in Sources */,
 				61022E8028D6D33D00D05739 /* CommentService.swift in Sources */,
 				618DBB0528D575BB00C1E787 /* Post.swift in Sources */,
 				61022E8328D6D82E00D05739 /* PostRepositoryImpl.swift in Sources */,

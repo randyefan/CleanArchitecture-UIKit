@@ -17,6 +17,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        injectDependencyForPostsScene()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -47,6 +49,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
+    // MARK: - Private Function
+    
+    private func injectDependencyForPostsScene() {
+        if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+            if let navigationController = window?.rootViewController as? UINavigationController {
+                if let viewController = navigationController.visibleViewController as? PostsViewController {
+                    let viewModel = appDelegate.appDIContainer.makePostModuleDIContainer().makePostsViewModel()
+                    viewController.inject(with: viewModel)
+                }
+            }
+        }
+    }
 
 }
 
