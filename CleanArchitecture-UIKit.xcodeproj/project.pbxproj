@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61022E7528D6CFD500D05739 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61022E7428D6CFD500D05739 /* JSON.swift */; };
+		61022E7728D6D02B00D05739 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61022E7628D6D02B00D05739 /* Observable.swift */; };
 		618DBAEB28D573F200C1E787 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DBAEA28D573F200C1E787 /* AppDelegate.swift */; };
 		618DBAED28D573F200C1E787 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DBAEC28D573F200C1E787 /* SceneDelegate.swift */; };
 		618DBAEF28D573F200C1E787 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DBAEE28D573F200C1E787 /* ViewController.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		61022E7428D6CFD500D05739 /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		61022E7628D6D02B00D05739 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		618DBAE728D573F200C1E787 /* CleanArchitecture-UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CleanArchitecture-UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		618DBAEA28D573F200C1E787 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		618DBAEC28D573F200C1E787 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +61,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		61022E7328D6CFBA00D05739 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				61022E7428D6CFD500D05739 /* JSON.swift */,
+				61022E7628D6D02B00D05739 /* Observable.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		618DBADE28D573F200C1E787 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +127,7 @@
 		618DBB0128D5743E00C1E787 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				61022E7328D6CFBA00D05739 /* Helpers */,
 				618DBAEA28D573F200C1E787 /* AppDelegate.swift */,
 				618DBAEC28D573F200C1E787 /* SceneDelegate.swift */,
 			);
@@ -241,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				618DBAEF28D573F200C1E787 /* ViewController.swift in Sources */,
+				61022E7728D6D02B00D05739 /* Observable.swift in Sources */,
 				618DBB1B28D5803800C1E787 /* LoadUsersUseCase.swift in Sources */,
 				618DBAEB28D573F200C1E787 /* AppDelegate.swift in Sources */,
 				618DBB1228D5781A00C1E787 /* UserRepository.swift in Sources */,
@@ -249,6 +264,7 @@
 				618DBB1528D57B9200C1E787 /* ViewPostsUseCase.swift in Sources */,
 				618DBB0E28D5780300C1E787 /* PostRepository.swift in Sources */,
 				618DBAED28D573F200C1E787 /* SceneDelegate.swift in Sources */,
+				61022E7528D6CFD500D05739 /* JSON.swift in Sources */,
 				618DBB1028D5780E00C1E787 /* CommentRepository.swift in Sources */,
 				618DBB0828D5762400C1E787 /* CommentResponse.swift in Sources */,
 				618DBB1928D57F3800C1E787 /* ViewCommentsUseCase.swift in Sources */,
