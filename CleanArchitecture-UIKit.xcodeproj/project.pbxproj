@@ -11,6 +11,8 @@
 		61022E7728D6D02B00D05739 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61022E7628D6D02B00D05739 /* Observable.swift */; };
 		61022E7928D6D0C000D05739 /* HTTPCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61022E7828D6D0C000D05739 /* HTTPCode.swift */; };
 		61022E7B28D6D0F400D05739 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61022E7A28D6D0F400D05739 /* Configurable.swift */; };
+		61022E7E28D6D1DE00D05739 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61022E7D28D6D1DE00D05739 /* PostService.swift */; };
+		61022E8028D6D33D00D05739 /* CommentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61022E7F28D6D33D00D05739 /* CommentService.swift */; };
 		618DBAEB28D573F200C1E787 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DBAEA28D573F200C1E787 /* AppDelegate.swift */; };
 		618DBAED28D573F200C1E787 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DBAEC28D573F200C1E787 /* SceneDelegate.swift */; };
 		618DBAEF28D573F200C1E787 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618DBAEE28D573F200C1E787 /* ViewController.swift */; };
@@ -34,6 +36,8 @@
 		61022E7628D6D02B00D05739 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		61022E7828D6D0C000D05739 /* HTTPCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPCode.swift; sourceTree = "<group>"; };
 		61022E7A28D6D0F400D05739 /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
+		61022E7D28D6D1DE00D05739 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		61022E7F28D6D33D00D05739 /* CommentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentService.swift; sourceTree = "<group>"; };
 		618DBAE728D573F200C1E787 /* CleanArchitecture-UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CleanArchitecture-UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		618DBAEA28D573F200C1E787 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		618DBAEC28D573F200C1E787 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +78,15 @@
 				61022E7A28D6D0F400D05739 /* Configurable.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		61022E7C28D6D1CA00D05739 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				61022E7D28D6D1DE00D05739 /* PostService.swift */,
+				61022E7F28D6D33D00D05739 /* CommentService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		618DBADE28D573F200C1E787 = {
@@ -118,6 +131,7 @@
 		618DBAFF28D5742000C1E787 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				61022E7C28D6D1CA00D05739 /* Services */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -267,6 +281,7 @@
 				618DBAEB28D573F200C1E787 /* AppDelegate.swift in Sources */,
 				61022E7928D6D0C000D05739 /* HTTPCode.swift in Sources */,
 				618DBB1228D5781A00C1E787 /* UserRepository.swift in Sources */,
+				61022E7E28D6D1DE00D05739 /* PostService.swift in Sources */,
 				618DBB0A28D576C400C1E787 /* User.swift in Sources */,
 				618DBB1728D57E0800C1E787 /* ViewPostUseCase.swift in Sources */,
 				618DBB1528D57B9200C1E787 /* ViewPostsUseCase.swift in Sources */,
@@ -276,6 +291,7 @@
 				618DBB1028D5780E00C1E787 /* CommentRepository.swift in Sources */,
 				618DBB0828D5762400C1E787 /* CommentResponse.swift in Sources */,
 				618DBB1928D57F3800C1E787 /* ViewCommentsUseCase.swift in Sources */,
+				61022E8028D6D33D00D05739 /* CommentService.swift in Sources */,
 				618DBB0528D575BB00C1E787 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
